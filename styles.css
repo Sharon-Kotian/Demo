@@ -1,0 +1,429 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background image to the entire page */
+body {
+     /* Replace with your image URL */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #19005a;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+     /* Adjust the logo size as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.enquire-button button {
+    background-color: #4CAF50; /* Green color for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.transparent-button button {
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Green color for the circle */
+}
+
+.circle p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Background color for the common background */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the search bar horizontally */
+}
+
+/* Style for each search field */
+.search-field {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.search-field img {
+    width: 20px; /* Adjust the icon size as needed */
+    margin-right: 5px; /* Add spacing between the icon and input field */
+}
+
+.search-field input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Style for the search button */
+.search-button {
+    background-color: #4CAF50; /* Green color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* Adjust the button styles as needed (text color, hover effect, etc.) */
+
+
+/* About section styles */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about img {
+    width: 20%; /* Adjust the image size as needed */
+    height: 8%;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal line */
+hr {
+    border: 1px solid #19005a;
+    margin: 40px 0;
+}
+
+/* Counts section styles */
+.counts {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.count {
+    text-align: center;
+}
+
+.count h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Content section styles (white background) */
+.content {
+    background-color: #19005a;
+    padding: 50px;
+}
+
+/* Amenities section styles
+.amenities {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.amenity img {
+    width: 50px; 
+}
+
+.amenity p {
+    margin-top: 10px;
+} */
+
+
+
+
+
+
+
+/* Styles for the amenities section */
+.amenities {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Style for the grid container */
+.amenities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Add spacing between grid items */
+}
+
+/* Style for the individual amenity cell */
+.amenity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for each grid item */
+    border-radius: 10px; /* Rounded corners for each grid item */
+}
+
+/* Style for the icon in the amenity cell */
+.amenity .icon img {
+    width: 50px; /* Adjust the icon size as needed */
+}
+
+/* Style for the description in the amenity cell */
+.amenity .description p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Media query for responsive design (optional) */
+@media screen and (max-width: 768px) {
+    .amenities {
+        grid-template-columns: 1fr; /* On small screens, display one column */
+    }
+}
+
+
+
+
+
+
+/* Full-width image */
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Columns section styles */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.column {
+    flex-basis: 23%;
+    text-align: center;
+}
+
+.column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    /* Add your footer styles here */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the additional sections */
+.additional-section {
+    padding: 50px 0;
+}
+
+/* Styles for the left-content in Additional Section 1 */
+.left-content {
+    float: left;
+    width: 50%;
+}
+
+/* Styles for the 3 Columns in Additional Section 2 */
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Styles for the 2x2 Grid in Additional Section 3 */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid-item .icon {
+    width: 50px;
+    margin-right: 20px;
+}
+
+/* Rest of your CSS styles for other sections */
+
+
+/* Styles for the Contact Us Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+/* Styles for the Contact Us Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+/* Styles for the Contact Form on the left */
+.contact-form {
+    width: 48%; /* Adjust the width as needed */
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder {
+    color: white; /* Placeholder text color */
+}
+
+.contact-form button {
+    background-color: #4CAF50; /* Green color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Styles for the Map Image on the right */
+.map-image {
+    width: 48%; /* Adjust the width as needed */
+    background-image: url('map-image.jpg'); /* Replace with your map image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
